@@ -147,7 +147,7 @@ export const triggerEcosystemFlow = async (props: {
 
     if (!purposeExists) {
         Logger.error({
-            message: 'Wrong purpose given',
+            message: 'Wrong purpose given ' + purposeId,
             location: 'consumerExchange',
         });
         throw new ExchangeError(
